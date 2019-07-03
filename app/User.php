@@ -26,4 +26,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function dia_da_semana (){
+        return $this->hasOne(Acidente::class);
+    }
 }

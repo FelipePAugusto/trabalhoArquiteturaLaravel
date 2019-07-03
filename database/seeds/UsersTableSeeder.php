@@ -16,6 +16,7 @@ class UsersTableSeeder extends Seeder
             'name'      => 'Felipe Augusto',
             'email'     => 'felipe@email.com.br',
             'password'  => bcrypt('1234'),
+            'nome'  => $faker->name()
         ]);
     }
 }
